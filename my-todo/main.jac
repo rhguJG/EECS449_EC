@@ -60,7 +60,7 @@ def:pub delete_todo(id: str) -> dict {
 cl def:pub app -> any {
     has items: list = [],
         text: str = "",
-        dark: bool = False;
+        theme: str = "light";
 
     async can with entry {
         items = await get_todos();
@@ -91,17 +91,33 @@ cl def:pub app -> any {
 
     remaining = items.filter(lambda t: any -> bool { return not t.done; }).length;
 
-    return
-        <div class={"container " + ("container-dark" if dark else "container-light")}>
-            <div class="header-row">
-                <h1>Todo App</h1>
-                <button
-                    class="btn-theme"
-                    onClick={lambda -> None { dark = not dark; }}
+return
+    <div class={
+        "container " + (
+            "container-dark" if theme == "dark"
+            else "container-umich" if theme == "umich"
+            else "container-pink" if theme == "pink"
+            else "container-light"
+        )
+    }>
+        <div class="header-row">
+            <h1>Todo App</h1>
+            <div class="theme-controls">
+                <span class="theme-label">Theme:</span>
+                <select
+                    class="theme-select"
+                    value={theme}
+                    onChange={lambda e: any -> None {
+                        theme = e.target.value;
+                    }}
                 >
-                    { "☀️ Light" if dark else "🌙 Dark" }
-                </button>
+                    <option value="light">☀️ Light</option>
+                    <option value="dark">🌙 Dark</option>
+                    <option value="umich">〽️ UMich</option>
+                    <option value="pink">🎀 Pink</option>
+                </select>
             </div>
+        </div>
             <div class="input-row">
                 <input
                     class="input"

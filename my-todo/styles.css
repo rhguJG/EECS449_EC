@@ -19,3 +19,46 @@
 .container-dark .btn-delete { background: #ef4444;}
 .container-dark .count { color: #9ca3af;}
 .container-dark .category { background: #4b5563; color: #f9fafb;}
+.theme-controls { display: flex; align-items: center; gap: 6px;}
+.theme-label { font-size: 0.85rem; color: #6b7280;}
+.theme-select { padding: 4px 8px; border-radius: 999px; border: 1px solid #d1d5db; background: #f9fafb; font-size: 0.85rem; cursor: pointer;}
+
+/* UMich */
+.container-umich {
+    background: linear-gradient(135deg, #00274C 0%, #00274C 55%, #FFCB05 100%);
+    color: #fefce8;
+    box-shadow: 0 10px 30px rgba(0, 39, 76, 0.8);
+    border-radius: 10px;
+  }
+.container-umich .input {
+    background: rgba(0, 0, 0, 0.25);
+    border-color: #FFCB05;
+    color: #fefce8;
+}
+.container-umich .input::placeholder { color: #fde68a;}
+.container-umich .todo-item { border-bottom-color: rgba(248, 250, 252, 0.25);}
+.container-umich .btn-add { background: #FFCB05; color: #1f2933;} 
+.container-umich .btn-delete { background: #b91c1c;}
+.container-umich .count { color: #fef9c3;}
+.container-umich .category { background: rgba(15, 23, 42, 0.85); color: #FFCB05; border: 1px solid #FFCB05;}
+
+  /* Pink */
+.container-pink {
+    background: radial-gradient(circle at top, #fce7f3 0, #f9a8d4 35%, #fdf2f8 100%);
+    color: #4a044e;
+    box-shadow: 0 10px 30px rgba(244, 114, 182, 0.5);
+    border-radius: 10px;
+  }
+.container-pink .input {
+    background: #fdf2f8;
+    border-color: #f9a8d4;
+    color: #4a044e;
+}
+.container-pink .input::placeholder { color: #f9a8d4;}
+.container-pink .todo-item { border-bottom-color: #f9a8d4;}
+.container-pink .btn-add { background: #ec4899;}
+.container-pink .btn-delete { background: #fb7185; }
+.container-pink .count { color: #9d174d;}
+.container-pink .category { background: #f9a8d4; color: #4a044e; border: 1px solid #ec4899;}
+  
+  
