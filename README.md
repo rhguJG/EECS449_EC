@@ -22,6 +22,6 @@ Each theme has different background, text color, and styles for inputs, buttons,
    jac start main.jac
 
 ## How the feature works
-I made the changes in *main.jac* first. In the client app, I store the current theme in a state variable theme. The outer <div> uses theme to choose a CSS class, and in the header, I added a <select> that lets the user change the theme through light mode to pink mode.
+I made the changes in *main.jac* first. In the client app, I store the current theme in a state variable theme. The outer \<div\> uses theme to choose a CSS class, and in the header, I added a \<select\> that lets the user change the theme through light mode to pink mode.
 
 Then I changed the *styles.css*. I define different styles and colors for each theme. These classes control the colors of the background, text, inputs, buttons, and the **.category** badge, so switching the theme changes the whole look of the app.
