@@ -16,7 +16,7 @@ Each theme has different background, text color, and styles for inputs, buttons,
 
 ## How to install and run
 
-1. Make sure you have **Jac** installed (following the course setup).  
+1. Make sure you have **Jac** installed (following the course setup). My jac version is 0.10.0, and python version is 3.13.5.
 2. Download the whole folder *my-todo* and put them in VSCode.
 3. Get an API from Gemini, and run
    jac start main.jac
