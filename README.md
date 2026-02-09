@@ -9,8 +9,8 @@ The user can change the UI theme between:
 
 - Light  
 - Dark  
-- Ocean  
-- Pink  
+- Umich
+- Pink 
 
 Each theme has different background, text color, and styles for inputs, buttons, and category badges.
 
